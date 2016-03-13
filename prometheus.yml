@@ -1,0 +1,11 @@
+
+
+global:
+  scrape_interval: 1s
+
+
+scrape_configs:
+  - job_name: "bitcoin-ticker-exporter"
+    target_groups:
+    - targets:
+        - "bitcoin_ticker_exporter:9999"
